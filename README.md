@@ -1,71 +1,72 @@
 # 🗄️ 12U Mini Server Rack Homelab
 
-![Final 12U Rack Build](images/hero_shot_placeholder.png)
-
-*A compact 10-inch 12U homelab rack built to support virtualization, segmented networking, storage, monitoring, and cybersecurity lab work.*
+*A compact 10-inch 12U rack infrastructure supporting Proxmox virtualization, VLAN segmentation, centralized storage, and hands-on cybersecurity & network engineering projects including firewall testing, SIEM log aggregation, and lab incident response scenarios.*
 
 ---
 
 ## 📌 Overview
 
-This project documents the physical buildout of my 12U mini server rack homelab. The goal was to move from a loose collection of devices and a custom [3D-printed TrueNAS system](https://github.com/esixtosr/3D-Printed-TRUENAS) into a cleaner, rack-mounted infrastructure stack that could support my cybersecurity, networking, and systems administration work.
+This project documents the physical buildout of a 12U mini server rack designed to consolidate my homelab infrastructure into one organized, rack-mounted backbone. The goal was to move from a loose collection of devices into a cleaner stack that could properly support virtualization, network segmentation, security testing, and systems administration coursework.
 
-As my coursework and hands-on lab work progressed through Purdue’s Cybersecurity and Network Engineering program, my infrastructure needs grew from basic virtual machines and storage into a more complete environment for virtualization, segmented networking, monitoring, and security testing.
+As my work progressed through Purdue's Cybersecurity and Network Engineering program, my infrastructure needs evolved from basic virtual machines and storage into a full environment supporting:
 
-The rack is designed around a compact 10-inch form factor while still supporting core homelab services such as:
+- **Bare-metal virtualization** with Proxmox VE (running isolated lab VMs)
+- **Network segmentation** with VLANs and firewall rule testing
+- **Centralized storage** with TrueNAS and SSD/HDD redundancy
+- **SIEM monitoring & log aggregation** with Wazuh
+- **Firewall and VPN testing** with UniFi routing
+- **Active Directory & domain lab environments** for privilege escalation and authentication testing
+- **Incident response & security testing** scenarios
+- **Custom 3D-printed mounts & rack accessories** for compact component organization
 
-- Bare-metal virtualization with Proxmox VE
-- Network segmentation and VLAN routing
-- Firewall and VPN testing
-- Centralized network storage with TrueNAS
-- SIEM monitoring and logging with Wazuh
-- Raspberry Pi services and lightweight infrastructure tasks
-- Cybersecurity lab environments
-- Custom 3D-printed rack mounts and accessories
+The rack serves as the physical foundation for hands-on infrastructure, networking, and cybersecurity projects throughout my studies and beyond.
 
-This serves as the physical foundation for the larger lab environment I use for hands-on infrastructure, networking, and security projects.
+---
+
+## 🔐 Network Architecture & Security Design
+
+**VLANs & Segmentation:**
+- Lab traffic is isolated into dedicated VLANs separate from main network services
+- Firewall rules enforce strict east-west traffic policies between lab environments
+- The UniFi Cloud Gateway Fiber acts as the central routing and firewall enforcement point
+
+**Lab Use Cases:**
+- **Active Directory testing**: Multi-machine domain environments for user/group policy testing and privilege escalation practice
+- **Firewall & intrusion detection**: Testing UniFi rules, VPN configurations, and Wazuh-based threat detection
+- **Malware analysis & isolation**: Dedicated VLAN-segmented VMs with restricted egress
+- **Incident response simulation**: Full network capture, log aggregation, and triage workflows
+- **Network monitoring & baselining**: Continuous packet analysis and Wazuh SIEM data collection
+
+---
+
+## 🧠 Services Deployed
+
+| Service | Purpose | Hardware |
+| :--- | :--- | :--- |
+| **Proxmox VE** | Bare-metal hypervisor hosting all lab VMs (Windows Server AD, Kali, Ubuntu, pfSense, etc.) | Lenovo ThinkCentre M720q |
+| **TrueNAS** | Centralized NAS with SSD and HDD backends for VM storage, backups, and media | Custom 3D-printed appliance |
+| **Wazuh SIEM** | Log aggregation, threat detection, and security monitoring across lab environments | Proxmox VM |
+| **UniFi Controller** | Network management, VLAN routing, firewall rules, PoE management, and AP coordination | Proxmox VM |
+| **Lightweight Services** | DNS, NTP, package caching, and auxiliary infrastructure tasks | Raspberry Pi 5 nodes |
 
 ---
 
 ## 🧭 Project Background
 
-My homelab started as a smaller setup focused on basic system administration, standalone virtual machines, and storage. Over time, the lab had to grow with the type of work I was doing.
-
-Earlier stages of the lab focused on:
-
-- Learning Linux and Windows Server administration
-- Running standalone virtual machines
-- Understanding subnetting, VLANs, and basic network services
-- Building a custom 3D-printed TrueNAS appliance
-- Organizing small services across consumer and repurposed hardware
-
-As the lab evolved, I needed a more organized physical setup that could handle:
-
-- Segmented lab networks
-- Firewall rule testing
-- VPN deployments
-- Proxmox virtualization
-- Active Directory lab environments
-- Centralized NAS storage
-- Wazuh SIEM monitoring and log collection
-- Security testing and incident response practice
-
-This rack build brings those pieces into one cleaner and more scalable physical environment. It acts as the physical backbone for my academic projects, personal infrastructure work, and long-term cybersecurity lab development.
+My homelab started small—standalone VMs and a custom 3D-printed TrueNAS appliance scattered across a shelf. As my cybersecurity coursework deepened, I needed a more organized physical infrastructure that could handle network segmentation, proper firewall testing, active directory domains, and centralized log collection. This rack build brought all those pieces into one compact, maintainable environment.
 
 ---
 
 ## 🗺️ Physical Topology
 
-The primary goal of this build was to create a compact but organized rack that could serve as the bare-metal backbone for my homelab.
+The primary goal was to create a compact but organized rack serving as the bare-metal backbone for my homelab.
 
-To plan the layout, I also built a custom interactive network topology tool for mapping devices, physical ports, and rack connections.
-
-![Interactive Network Topology Walkthrough](images/topology_walkthrough.gif)
+To visualize and plan the layout, I built a custom interactive network topology tool for mapping devices, physical port assignments, and rack connections. This helps document which devices connect where and makes it easier to trace physical links during troubleshooting or expansion.
 
 **Live Topology Preview:**  
 [Open the interactive network topology](network-topology.html)
 
-> **Note:** The topology page is intended to show physical connections, port assignments, and device relationships. Logical services such as Proxmox, Active Directory, VLANs, and security tools may be documented separately.
+> **Note:** The topology tool shows physical rack positions and network connections. Logical services (Proxmox VM architecture, VLAN policies, firewall rules, etc.) are documented separately in the network architecture section above.
 
 ---
 
