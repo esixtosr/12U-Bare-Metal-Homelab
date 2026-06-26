@@ -8,26 +8,28 @@
 
 ## 📌 Overview
 
-This project documents the physical buildout of my 12U mini server rack homelab. The goal was to move from a loose collection of devices and a custom 3D-printed TrueNAS system into a cleaner, rack-mounted infrastructure stack that could support my cybersecurity, networking, and systems administration work.
+This project documents the physical buildout of my 12U mini server rack homelab. The goal was to move from a loose collection of devices and a custom [3D-printed TrueNAS system](https://github.com/esixtosr/3D-Printed-TRUENAS) into a cleaner, rack-mounted infrastructure stack that could support my cybersecurity, networking, and systems administration work.
+
+As my coursework and hands-on lab work progressed through Purdue’s Cybersecurity and Network Engineering program, my infrastructure needs grew from basic virtual machines and storage into a more complete environment for virtualization, segmented networking, monitoring, and security testing.
 
 The rack is designed around a compact 10-inch form factor while still supporting core homelab services such as:
 
-- Virtualization
-- Network segmentation
-- Firewall and routing experiments
-- Centralized storage
-- Lightweight monitoring
-- Raspberry Pi services
+- Bare-metal virtualization with Proxmox VE
+- Network segmentation and VLAN routing
+- Firewall and VPN testing
+- Centralized network storage with TrueNAS
+- SIEM monitoring and logging with Wazuh
+- Raspberry Pi services and lightweight infrastructure tasks
 - Cybersecurity lab environments
 - Custom 3D-printed rack mounts and accessories
 
-This is the physical foundation for the larger lab environment I use for hands-on infrastructure, security, and networking projects.
+This serves as the physical foundation for the larger lab environment I use for hands-on infrastructure, networking, and security projects.
 
 ---
 
 ## 🧭 Project Background
 
-My homelab started as a smaller setup focused on basic system administration, virtual machines, and storage. Over time, my needs grew as I moved deeper into cybersecurity and network engineering.
+My homelab started as a smaller setup focused on basic system administration, standalone virtual machines, and storage. Over time, the lab had to grow with the type of work I was doing.
 
 Earlier stages of the lab focused on:
 
@@ -35,19 +37,20 @@ Earlier stages of the lab focused on:
 - Running standalone virtual machines
 - Understanding subnetting, VLANs, and basic network services
 - Building a custom 3D-printed TrueNAS appliance
+- Organizing small services across consumer and repurposed hardware
 
 As the lab evolved, I needed a more organized physical setup that could handle:
 
-- Segmented networks
+- Segmented lab networks
 - Firewall rule testing
 - VPN deployments
 - Proxmox virtualization
-- Active Directory labs
-- NAS storage
-- Raspberry Pi services
-- Security monitoring and logging experiments
+- Active Directory lab environments
+- Centralized NAS storage
+- Wazuh SIEM monitoring and log collection
+- Security testing and incident response practice
 
-This rack build brings those pieces into one cleaner and more scalable physical environment.
+This rack build brings those pieces into one cleaner and more scalable physical environment. It acts as the physical backbone for my academic projects, personal infrastructure work, and long-term cybersecurity lab development.
 
 ---
 
