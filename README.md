@@ -61,12 +61,15 @@ My homelab started small—standalone VMs and a custom 3D-printed TrueNAS applia
 
 The primary goal was to create a compact but organized rack serving as the bare-metal backbone for my homelab.
 
-To visualize and plan the layout, I built a custom interactive network topology tool for mapping devices, physical port assignments, and rack connections. This helps document which devices connect where and makes it easier to trace physical links during troubleshooting or expansion.
+To visualize and document the environment, I built a custom interactive network topology tool for mapping devices, VLANs, physical connections, and infrastructure services. This makes it easier to understand how the network is structured, trace connections during troubleshooting, and plan future expansion.
 
-**Live Topology Preview:**  
-[Open the interactive network topology](https://esixtosr.github.io/NetFlow/network/home-lab/)
+### Interactive Network Topology
 
-> **Note:** The topology tool shows physical rack positions and network connections. Logical services (Proxmox VM architecture, VLAN policies, firewall rules, etc.) are documented separately in the network architecture section above.
+[![NetFlow Homelab Network Topology](video/netflow.gif)](https://esixtosr.github.io/NetFlow/network/home-lab/)
+
+**[Open the interactive network topology →](https://esixtosr.github.io/NetFlow/network/home-lab/)**
+
+> **Note:** Click the topology preview above to open the live interactive version. The topology documents physical devices, VLAN placement, network connections, and hosted infrastructure. Detailed firewall rules, virtual machine configurations, and service documentation are maintained separately.
 
 ---
 
@@ -146,8 +149,9 @@ This rack is not meant to be a data center. It is a practical, small-scale infra
 
 ## 🔗 Related Projects
 
+- [Interactive NetFlow Network Topology](https://esixtosr.github.io/NetFlow/network/home-lab/)
+- [NetFlow GitHub Repository](https://github.com/esixtosr/NetFlow)
 - [3D-Printed TrueNAS Appliance](https://github.com/esixtosr/3D-Printed-TRUENAS)
-- Interactive Network Topology: `network-topology.html`
 - Logical Infrastructure Documentation: Coming soon
 
 ---
