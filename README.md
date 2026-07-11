@@ -64,7 +64,7 @@ The primary goal was to create a compact but organized rack serving as the bare-
 To visualize and plan the layout, I built a custom interactive network topology tool for mapping devices, physical port assignments, and rack connections. This helps document which devices connect where and makes it easier to trace physical links during troubleshooting or expansion.
 
 **Live Topology Preview:**  
-[Open the interactive network topology](https://esixtosr.github.io/NetFlow/network/home-lab/)<br>
+[Open the interactive network topology](https://esixtosr.github.io/NetFlow/network/home-lab/)
 
 > **Note:** The topology tool shows physical rack positions and network connections. Logical services (Proxmox VM architecture, VLAN policies, firewall rules, etc.) are documented separately in the network architecture section above.
 
