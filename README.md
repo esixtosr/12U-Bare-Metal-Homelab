@@ -1,5 +1,6 @@
 # 🗄️ 12U Mini Server Rack Homelab
 
+![Final 12U Rack Build](images/Image5.jpg)
 *A compact 10-inch 12U rack infrastructure supporting Proxmox virtualization, VLAN segmentation, centralized storage, and hands-on cybersecurity & network engineering projects including firewall testing, SIEM log aggregation, and lab incident response scenarios.*
 
 ---
@@ -8,7 +9,7 @@
 
 This project documents the physical buildout of a 12U mini server rack designed to consolidate my homelab infrastructure into one organized, rack-mounted backbone. The goal was to move from a loose collection of devices into a cleaner stack that could properly support virtualization, network segmentation, security testing, and systems administration coursework.
 
-As my work progressed through Purdue's Cybersecurity and Network Engineering program, my infrastructure needs evolved from basic virtual machines and storage into a full environment supporting:
+As my work progressed, my infrastructure needs evolved from basic virtual machines and storage into a full environment supporting:
 
 - **Bare-metal virtualization** with Proxmox VE (running isolated lab VMs)
 - **Network segmentation** with VLANs and firewall rule testing
@@ -19,7 +20,7 @@ As my work progressed through Purdue's Cybersecurity and Network Engineering pro
 - **Incident response & security testing** scenarios
 - **Custom 3D-printed mounts & rack accessories** for compact component organization
 
-The rack serves as the physical foundation for hands-on infrastructure, networking, and cybersecurity projects throughout my studies and beyond.
+The rack serves as the physical foundation for hands-on infrastructure, networking, and cybersecurity projects.
 
 ---
 
@@ -53,7 +54,7 @@ The rack serves as the physical foundation for hands-on infrastructure, networki
 
 ## 🧭 Project Background
 
-My homelab started small—standalone VMs and a custom 3D-printed TrueNAS appliance scattered across a shelf. As my cybersecurity coursework deepened, I needed a more organized physical infrastructure that could handle network segmentation, proper firewall testing, active directory domains, and centralized log collection. This rack build brought all those pieces into one compact, maintainable environment.
+My homelab started small—standalone VMs and a custom 3D-printed TrueNAS appliance scattered across a shelf. As my coursework deepened, I needed a more organized physical infrastructure that could handle network segmentation, proper firewall testing, active directory domains, and centralized log collection. This rack build brought all those pieces into one compact, maintainable environment.
 
 ---
 
@@ -74,6 +75,9 @@ To visualize and document the environment, I built a custom interactive network 
 ---
 
 ## 📋 Bill of Materials
+
+![Hardware Stack and Layout](images/Image3.jpg)
+*Front view of the populated rack showcasing the UniFi networking gear, patch panel, Lenovo compute node, and TrueNAS storage base.*
 
 | Category | Components | Purpose |
 | :--- | :--- | :--- |
